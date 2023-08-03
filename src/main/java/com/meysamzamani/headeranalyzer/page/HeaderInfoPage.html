@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Header Analyzer</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+    <h1>Header Analyzer</h1>
+    <form wicket:id="emailForm">
+        <label>Email:</label>
+        <input type="email" wicket:id="emailInput" required="required" />
+        <button type="submit" wicket:id="submitBtn">Submit</button>
+    </form>
+    <span wicket:id="feedback"></span>
+    <table class="table">
+        <tr wicket:id="listview">
+            <td><span wicket:id="name"></span></td>
+            <td><span wicket:id="type"></span></td>
+        </tr>
+    </table>
+</body>
+</html>
